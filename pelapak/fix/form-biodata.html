@@ -44,7 +44,7 @@
 		<![endif]-->
 
 		<!-- tambahan -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="avatar2/css/fileinput.css" media="all" rel="stylesheet" type="text/css"/>
     <link href="avatar2//themes/explorer/theme.css" media="all" rel="stylesheet" type="text/css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -52,6 +52,12 @@
     <script src="avatar2//js/fileinput.js" type="text/javascript"></script>
     <script src="avatar2//themes/explorer/theme.js" type="text/javascript"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script> -->
+
+		<!-- tags input -->
+		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
+		<link rel="stylesheet" href="assets/css/chosen.min.css" />
+		<!-- date-picker -->
+		<link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css" />
 	</head>
 
 	<body class="no-skin">
@@ -653,7 +659,7 @@
 						</ul>
 					</li>
 
-					<li class="active open">
+					<li class="">
 						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-pencil-square-o"></i>
 							<span class="menu-text"> Forms </span>
@@ -682,7 +688,7 @@
 								<b class="arrow"></b>
 							</li>
 
-							<li class="active">
+							<li class="">
 								<a href="form-wizard.html">
 									<i class="menu-icon fa fa-caret-right"></i>
 									Wizard &amp; Validation
@@ -1005,11 +1011,6 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-								<h4 class="lighter">
-									<i class="ace-icon fa fa-hand-o-right icon-animated-hand-pointer blue"></i>
-									<a href="#modal-wizard" data-toggle="modal" class="pink"> Wizard Inside a Modal Box </a>
-								</h4>
-
 								<div class="hr hr-18 hr-double dotted"></div>
 
 								<div class="widget-box">
@@ -1028,6 +1029,7 @@
 										</div> -->
 									</div>
 
+								<form class="form-horizontal " id="" method="post" enctype="multipart/form-data">
 									<div class="widget-body">
 										<div class="widget-main">
 											<div id="fuelux-wizard-container">
@@ -1056,75 +1058,9 @@
 												</div>
 
 												<hr />
-
 												<div class="step-content pos-rel">
 													<div class="step-pane active" data-step="1">
-														<h3 class="lighter block green">Enter the following information</h3>
-
-														<!-- <form class="form-horizontal" id="sample-form">
-															<div class="form-group has-warning">
-																<label for="inputWarning" class="col-xs-12 col-sm-3 control-label no-padding-right">Input with warning</label>
-
-																<div class="col-xs-12 col-sm-5">
-																	<span class="block input-icon input-icon-right">
-																		<input type="text" id="inputWarning" class="width-100" />
-																		<i class="ace-icon fa fa-leaf"></i>
-																	</span>
-																</div>
-																<div class="help-block col-xs-12 col-sm-reset inline"> Warning tip help! </div>
-															</div>
-
-															<div class="form-group has-error">
-																<label for="inputError" class="col-xs-12 col-sm-3 col-md-3 control-label no-padding-right">Input with error</label>
-
-																<div class="col-xs-12 col-sm-5">
-																	<span class="block input-icon input-icon-right">
-																		<input type="text" id="inputError" class="width-100" />
-																		<i class="ace-icon fa fa-times-circle"></i>
-																	</span>
-																</div>
-																<div class="help-block col-xs-12 col-sm-reset inline"> Error tip help! </div>
-															</div>
-
-															<div class="form-group has-success">
-																<label for="inputSuccess" class="col-xs-12 col-sm-3 control-label no-padding-right">Input with success</label>
-
-																<div class="col-xs-12 col-sm-5">
-																	<span class="block input-icon input-icon-right">
-																		<input type="text" id="inputSuccess" class="width-100" />
-																		<i class="ace-icon fa fa-check-circle"></i>
-																	</span>
-																</div>
-																<div class="help-block col-xs-12 col-sm-reset inline"> Success tip help! </div>
-															</div>
-
-															<div class="form-group has-info">
-																<label for="inputInfo" class="col-xs-12 col-sm-3 control-label no-padding-right">Input with info</label>
-
-																<div class="col-xs-12 col-sm-5">
-																	<span class="block input-icon input-icon-right">
-																		<input type="text" id="inputInfo" class="width-100" />
-																		<i class="ace-icon fa fa-info-circle"></i>
-																	</span>
-																</div>
-																<div class="help-block col-xs-12 col-sm-reset inline"> Info tip help! </div>
-															</div>
-
-															<div class="form-group">
-																<label for="inputError2" class="col-xs-12 col-sm-3 control-label no-padding-right">Input with error</label>
-
-																<div class="col-xs-12 col-sm-5">
-																	<span class="input-icon block">
-																		<input type="text" id="inputError2" class="width-100" />
-																		<i class="ace-icon fa fa-times-circle red"></i>
-																	</span>
-																</div>
-																<div class="help-block col-xs-12 col-sm-reset inline"> Error tip help! </div>
-															</div>
-														</form> -->
-
-														<form class="form-horizontal " id="" method="post" enctype="multipart/form-data">
-
+														<h3 class="lighter block green">Masukan Biodata Asli</h3>
 															<div class="hr hr-dotted"></div>
 															<div class="form-group">
 																<label for="image" class="control-label col-xs-12 col-sm-3 no-padding-right">Foto Asli</label>
@@ -1137,91 +1073,71 @@
 															<div class="space-2"></div>
 															<div class="form-group">
 																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="name">Nama Lengkap</label>
-
 																<div class="col-xs-12 col-sm-9">
 																	<div class="clearfix">
 																		<input type="text" id="name" name="name" class="col-xs-12 col-sm-5" />
 																	</div>
 																</div>
 															</div>
-
 															<div class="space-2"></div>
-
-															<div class="form-group">
-																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="phone">Phone Number:</label>
-
-																<div class="col-xs-12 col-sm-9">
-																	<div class="input-group">
-																		<span class="input-group-addon">
-																			<i class="ace-icon fa fa-phone"></i>
-																		</span>
-
-																		<input type="tel" id="phone" name="phone" />
-																	</div>
-																</div>
-															</div>
-
-															<div class="space-2"></div>
-
-															<div class="form-group">
-																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="url">Company URL:</label>
-
-																<div class="col-xs-12 col-sm-9">
-																	<div class="clearfix">
-																		<input type="url" id="url" name="url" class="col-xs-12 col-sm-8" />
-																	</div>
-																</div>
-															</div>
-
-															<div class="hr hr-dotted"></div>
-
-															<div class="form-group">
-																<label class="control-label col-xs-12 col-sm-3 no-padding-right">Subscribe to</label>
-
-																<div class="col-xs-12 col-sm-9">
-																	<div>
-																		<label>
-																			<input name="subscription" value="1" type="checkbox" class="ace" />
-																			<span class="lbl"> Latest news and announcements</span>
-																		</label>
-																	</div>
-
-																	<div>
-																		<label>
-																			<input name="subscription" value="2" type="checkbox" class="ace" />
-																			<span class="lbl"> Product offers and discounts</span>
-																		</label>
-																	</div>
-																</div>
-															</div>
-
-															<div class="space-2"></div>
-
 															<div class="form-group">
 																<label class="control-label col-xs-12 col-sm-3 no-padding-right">Gender</label>
-
 																<div class="col-xs-12 col-sm-9">
 																	<div>
 																		<label class="line-height-1 blue">
 																			<input name="gender" value="1" type="radio" class="ace" />
-																			<span class="lbl"> Male</span>
+																			<span class="lbl">Laki-laki</span>
 																		</label>
 																	</div>
-
 																	<div>
 																		<label class="line-height-1 blue">
 																			<input name="gender" value="2" type="radio" class="ace" />
-																			<span class="lbl"> Female</span>
+																			<span class="lbl">Perempuan</span>
 																		</label>
 																	</div>
 																</div>
 															</div>
-
-															<div class="hr hr-dotted"></div>
-
 															<div class="form-group">
-																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="state">State</label>
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="tgl">Tanggal Lahir</label>
+																<div class="col-xs-12 col-sm-4">
+																	<input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy" />
+																</div>
 
+															</div>
+															<div class="hr hr-dotted"></div>
+															<div class="form-group">
+																<label class="col-sm-3 control-label no-padding-right" for="form-field-tags">Nomor Anda</label>
+
+																<div class="col-sm-4">
+																	<div class="inline">
+																		<input type="text" name="tags" id="form-field-tags" value="" placeholder="Masukan nomer yang aktiv" />
+																	</div>
+																</div>
+																<div class="col-sm-5">
+																	<div class="alert alert-warning">
+																		<button type="button" class="close" data-dismiss="alert">
+																			<i class="ace-icon fa fa-times"></i>
+																		</button>
+																		<strong>Hapus Nomer 08xxxxxxxxxx!</strong>
+																		Masukan dengan nomer yang bisa dihubungi, bisa dimasukan lebih dari satu nomor.
+																		<br />
+																	</div>
+
+																</div>
+															</div>
+															<div class="space-2"></div>
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="comment">Alamat Lengkap</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<textarea class="input-xlarge" name="comment" id="comment"></textarea>
+																	</div>
+																</div>
+															</div>
+															<div class="space-8"></div>
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="state">Kecamatan</label>
 																<div class="col-xs-12 col-sm-9">
 																	<select id="state" name="state" class="select2" data-placeholder="Click to Choose...">
 																		<option value="">&nbsp;</option>
@@ -1278,49 +1194,27 @@
 																	</select>
 																</div>
 															</div>
-
 															<div class="space-2"></div>
-
 															<div class="form-group">
-																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="platform">Platform</label>
-
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="state">Kab/Kota</label>
 																<div class="col-xs-12 col-sm-9">
-																	<div class="clearfix">
-																		<select class="input-medium" id="platform" name="platform">
-																			<option value="">------------------</option>
-																			<option value="linux">Linux</option>
-																			<option value="windows">Windows</option>
-																			<option value="mac">Mac OS</option>
-																			<option value="ios">iOS</option>
-																			<option value="android">Android</option>
-																		</select>
-																	</div>
+																	<select id="state" name="state" class="select2" data-placeholder="Click to Choose...">
+																		<option value="">&nbsp;</option>
+																		<option value="AL">Kota. Tegal</option>
+																		<option value="AK">Kab. Tegal</option>
+																		<option value="AZ">Kota Slawi</option>
+																	</select>
 																</div>
 															</div>
-
 															<div class="space-2"></div>
-
-															<div class="form-group">
-																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="comment">Comment</label>
-
-																<div class="col-xs-12 col-sm-9">
-																	<div class="clearfix">
-																		<textarea class="input-xlarge" name="comment" id="comment"></textarea>
-																	</div>
-																</div>
-															</div>
-
-															<div class="space-8"></div>
-
 															<div class="form-group">
 																<div class="col-xs-12 col-sm-4 col-sm-offset-3">
 																	<label>
 																		<input name="agree" id="agree" type="checkbox" class="ace" />
-																		<span class="lbl"> I accept the policy</span>
+																		<span class="lbl">Saya mengisi data ini sebenar-benarnya</span>
 																	</label>
 																</div>
 															</div>
-														</form>
 													</div>
 
 													<div class="step-pane" data-step="2">
@@ -1372,6 +1266,49 @@
 																This alert needs your attention, but it's not super important.
 																<br />
 															</div>
+															<div class="space-2">
+
+															</div>
+															<div class="form-group">
+																<label for="image" class="control-label col-xs-12 col-sm-3 no-padding-right">Foto Asli</label>
+																<div class="col-xs-12 col-sm-5">
+																	<div class="clearfix">
+																		<input id="file-0d" class="file" type="file">
+																	</div>
+																</div>
+															</div>
+															<div class="space-2"></div>
+															<div class="form-group">
+																<label class="control-label col-xs-12 col-sm-3 no-padding-right" for="name">Nama Lengkap</label>
+
+																<div class="col-xs-12 col-sm-9">
+																	<div class="clearfix">
+																		<input type="text" id="name" name="name" class="col-xs-12 col-sm-5" />
+																	</div>
+																</div>
+															</div>
+															<div class="space-2"></div>
+															<div class="form-group">
+																<label class="col-sm-3 control-label no-padding-right" for="form-field-tags">Tag input</label>
+
+																<div class="col-sm-4">
+																	<div class="inline">
+																		<input type="text" name="tags" id="form-field-tags" value="Masukan nomor" placeholder="Masukan nomer yang aktiv" />
+																	</div>
+																</div>
+																<div class="col-sm-5">
+																	<div class="alert alert-warning">
+																		<button type="button" class="close" data-dismiss="alert">
+																			<i class="ace-icon fa fa-times"></i>
+																		</button>
+																		<strong>Hapus Nomer 08xxxxxxxxxx!</strong>
+																		Masukan dengan nomer yang bisa dihubungi.
+																		<br />
+																	</div>
+
+																</div>
+															</div>
+															<div class="space-2"></div>
 														</div>
 													</div>
 
@@ -1396,90 +1333,16 @@
 													<i class="ace-icon fa fa-arrow-left"></i>
 													Prev
 												</button>
-
 												<button class="btn btn-success btn-next" data-last="Finish">
 													Next
 													<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
 												</button>
 											</div>
 										</div><!-- /.widget-main -->
-									</div><!-- /.widget-body -->
-								</div>
-
-								<div id="modal-wizard" class="modal">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<div id="modal-wizard-container">
-												<div class="modal-header">
-													<ul class="steps">
-														<li data-step="1" class="active">
-															<span class="step">1</span>
-															<span class="title">Validation states</span>
-														</li>
-
-														<li data-step="2">
-															<span class="step">2</span>
-															<span class="title">Alerts</span>
-														</li>
-
-														<li data-step="3">
-															<span class="step">3</span>
-															<span class="title">Payment Info</span>
-														</li>
-
-														<li data-step="4">
-															<span class="step">4</span>
-															<span class="title">Other Info</span>
-														</li>
-													</ul>
-												</div>
-
-												<div class="modal-body step-content">
-													<div class="step-pane active" data-step="1">
-														<div class="center">
-															<h4 class="blue">Step 1</h4>
-														</div>
-													</div>
-
-													<div class="step-pane" data-step="2">
-														<div class="center">
-															<h4 class="blue">Step 2</h4>
-														</div>
-													</div>
-
-													<div class="step-pane" data-step="3">
-														<div class="center">
-															<h4 class="blue">Step 3</h4>
-														</div>
-													</div>
-
-													<div class="step-pane" data-step="4">
-														<div class="center">
-															<h4 class="blue">Step 4</h4>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="modal-footer wizard-actions">
-												<button class="btn btn-sm btn-prev">
-													<i class="ace-icon fa fa-arrow-left"></i>
-													Prev
-												</button>
-
-												<button class="btn btn-success btn-sm btn-next" data-last="Finish">
-													Next
-													<i class="ace-icon fa fa-arrow-right icon-on-right"></i>
-												</button>
-
-												<button class="btn btn-danger btn-sm pull-left" data-dismiss="modal">
-													<i class="ace-icon fa fa-times"></i>
-													Cancel
-												</button>
-											</div>
-										</div>
 									</div>
-								</div><!-- PAGE CONTENT ENDS -->
+									<!-- /.widget-body -->
+								</form>
+								</div>
 							</div><!-- /.col -->
 						</div><!-- /.row -->
 					</div><!-- /.page-content -->
@@ -1539,10 +1402,13 @@
 		<script src="assets/js/bootbox.js"></script>
 		<script src="assets/js/jquery.maskedinput.min.js"></script>
 		<script src="assets/js/select2.min.js"></script>
-
+		<!-- tag input -->
+		<script src="assets/js/bootstrap-tag.min.js"></script>
 		<!-- ace scripts -->
 		<script src="assets/js/ace-elements.min.js"></script>
 		<script src="assets/js/ace.min.js"></script>
+		<!-- date-picker -->
+		<script src="assets/js/bootstrap-datepicker.min.js"></script>
 
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">
@@ -1724,7 +1590,38 @@
 				$('#modal-wizard-container').ace_wizard();
 				$('#modal-wizard .wizard-actions .btn[data-dismiss=modal]').removeAttr('disabled');
 
+				// tag input
+				var tag_input = $('#form-field-tags');
+				try{
+					tag_input.tag(
+					  {
+						placeholder:tag_input.attr('placeholder'),
+						//enable typeahead by specifying the source array
+						source: ace.vars[''],//defined in ace.js >> ace.enable_search_ahead
+						/**
+						//or fetch data from database, fetch those that match "query"
+						source: function(query, process) {
+						  $.ajax({url: 'remote_source.php?q='+encodeURIComponent(query)})
+						  .done(function(result_items){
+							process(result_items);
+						  });
+						}
+						*/
+					  }
+					)
 
+					//programmatically add/remove a tag
+					var $tag_obj = $('#form-field-tags').data('tag');
+					$tag_obj.add('08xxxxxxxxxx');
+
+					var index = $tag_obj.inValues('some tag');
+					$tag_obj.remove(index);
+				}
+				catch(e) {
+					//display a textarea for old IE, because it doesn't support this plugin or another one I tried!
+					tag_input.after('<textarea id="'+tag_input.attr('id')+'" name="'+tag_input.attr('name')+'" rows="3">'+tag_input.val()+'</textarea>').remove();
+					//autosize($('#form-field-tags'));
+				}
 				/**
 				$('#date').datepicker({autoclose:true}).on('changeDate', function(ev) {
 					$(this).closest('form').validate().element($(this));
@@ -1739,6 +1636,33 @@
 				$(document).one('ajaxloadstart.page', function(e) {
 					//in ajax mode, remove remaining elements before leaving page
 					$('[class*=select2]').remove();
+				});
+
+				// datepicker
+				$('.date-picker').datepicker({
+					autoclose: true,
+					todayHighlight: true
+				})
+				//show datepicker when clicking on the icon
+				.next().on(ace.click_event, function(){
+					$(this).prev().focus();
+				});
+
+				//or change it into a date range picker
+				$('.input-daterange').datepicker({autoclose:true});
+
+
+				//to translate the daterange picker, please copy the "examples/daterange-fr.js" contents here before initialization
+				$('input[name=date-range-picker]').daterangepicker({
+					'applyClass' : 'btn-sm btn-success',
+					'cancelClass' : 'btn-sm btn-default',
+					locale: {
+						applyLabel: 'Apply',
+						cancelLabel: 'Cancel',
+					}
+				})
+				.prev().on(ace.click_event, function(){
+					$(this).next().focus();
 				});
 			})
 		</script>
@@ -1844,6 +1768,5 @@
 		         */
 		    });
 		</script>
-
 	</body>
 </html>
